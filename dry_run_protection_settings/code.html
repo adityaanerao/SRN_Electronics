@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
-  <title>Dry-Run Protection Settings - Karya Automations</title>
+  <title>Dry-Run Protection Settings - Unique Pump Guard</title>
   <!-- Google Fonts: Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,9 +58,9 @@
           </svg>
         </button>
 
-        <!-- Karya Automations Brand Logo in Left Corner After Back Button -->
-        <div class="bg-white rounded-full p-0.5 shadow-xs flex items-center justify-center shrink-0 cursor-pointer btn-tactile" data-route="home" style="width: 36px; height: 36px;">
-          <img src="../assets/karya-logo.svg" alt="Karya Automations Logo" class="w-full h-full object-contain rounded-full">
+        <!-- Unique Pump Guard Brand Logo in Left Corner After Back Button -->
+        <div class="bg-white rounded-lg px-1 py-0.5 shadow-xs flex items-center justify-center shrink-0 cursor-pointer btn-tactile" data-route="home" style="height: 32px; width: 60px;">
+          <img src="../assets/unique-pump-guard-emblem.png" alt="Unique Pump Guard Logo" class="w-full h-full object-contain">
         </div>
 
         <!-- Title and Subtitle -->
@@ -277,7 +277,7 @@
 
     // Load persisted state if exists
     try {
-      const stored = JSON.parse(localStorage.getItem('karyaMotorProtectionSettings') || '{}');
+      const stored = JSON.parse(localStorage.getItem('uniquePumpGuardSettings') || '{}');
       if (stored.dryrun) {
         if (stored.dryrun.threshold) dryRunThreshold = stored.dryrun.threshold;
         if (stored.dryrun.tripDelay) dryRunDelay = stored.dryrun.tripDelay;
@@ -430,7 +430,7 @@
 
     // Save Settings
     document.getElementById('saveBtn').addEventListener('click', () => {
-      const stored = JSON.parse(localStorage.getItem('karyaMotorProtectionSettings') || '{}');
+      const stored = JSON.parse(localStorage.getItem('uniquePumpGuardSettings') || '{}');
       stored.dryrun = {
         isEnabled,
         threshold: dryRunThreshold,
@@ -439,7 +439,7 @@
         maxRetries,
         method: dryRunMethod
       };
-      localStorage.setItem('karyaMotorProtectionSettings', JSON.stringify(stored));
+      localStorage.setItem('uniquePumpGuardSettings', JSON.stringify(stored));
       showToast('Dry-Run Settings Saved Successfully!');
     });
 

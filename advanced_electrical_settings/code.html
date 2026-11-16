@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
-  <title>Auto Starter &amp; Advanced Electrical Settings - Karya Automations</title>
+  <title>DOL Unique Starter &amp; Auto Settings - Unique Pump Guard</title>
   <!-- Google Fonts: Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,17 +58,17 @@
           </svg>
         </button>
 
-        <!-- Karya Automations Brand Logo in Left Corner After Back Button -->
-        <div class="bg-white rounded-full p-0.5 shadow-xs flex items-center justify-center shrink-0 cursor-pointer btn-tactile" data-route="home" style="width: 36px; height: 36px;">
-          <img src="../assets/karya-logo.svg" alt="Karya Automations Logo" class="w-full h-full object-contain rounded-full">
+        <!-- Unique Pump Guard Brand Logo in Left Corner After Back Button -->
+        <div class="bg-white rounded-lg px-1 py-0.5 shadow-xs flex items-center justify-center shrink-0 cursor-pointer btn-tactile" data-route="home" style="height: 32px; width: 60px;">
+          <img src="../assets/unique-pump-guard-emblem.png" alt="Unique Pump Guard Logo" class="w-full h-full object-contain">
         </div>
 
         <!-- Title and Subtitle -->
         <div class="flex-1 min-w-0">
           <div class="flex items-center justify-between gap-1">
-            <h1 class="text-lg font-extrabold tracking-tight text-white leading-tight truncate">Auto Starter Engine</h1>
+            <h1 class="text-lg font-extrabold tracking-tight text-white leading-tight truncate">Unique Auto Starter</h1>
             <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-white/20 text-white backdrop-blur-sm shrink-0">
-              Smart Logic
+              DOL &bull; Auto
             </span>
           </div>
           <p class="text-xs text-red-100 mt-0.5 font-normal truncate">Power recovery, surge delay &amp; cyclic timing</p>
@@ -263,7 +263,7 @@
 
     // Load persisted state if exists
     try {
-      const stored = JSON.parse(localStorage.getItem('karyaMotorProtectionSettings') || '{}');
+      const stored = JSON.parse(localStorage.getItem('uniquePumpGuardSettings') || '{}');
       if (stored.advanced) {
         if (stored.advanced.starterMode) starterMode = stored.advanced.starterMode;
         if (stored.advanced.surgeDelay) surgeDelay = stored.advanced.surgeDelay;
@@ -432,7 +432,7 @@
 
     // Save Settings
     document.getElementById('saveBtn').addEventListener('click', () => {
-      const stored = JSON.parse(localStorage.getItem('karyaMotorProtectionSettings') || '{}');
+      const stored = JSON.parse(localStorage.getItem('uniquePumpGuardSettings') || '{}');
       stored.advanced = {
         starterMode,
         surgeDelay,
@@ -443,7 +443,7 @@
         bypassMode,
         settingsLocked
       };
-      localStorage.setItem('karyaMotorProtectionSettings', JSON.stringify(stored));
+      localStorage.setItem('uniquePumpGuardSettings', JSON.stringify(stored));
       showToast('Starter Logic Settings Saved Successfully!');
     });
 

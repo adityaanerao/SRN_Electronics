@@ -1,5 +1,5 @@
 /**
- * Karya Automations - Smart Motor Control Unified App Runtime Engine
+ * Unique Pump Guard (SNR Electronics) - Unified App Runtime Engine
  * Powers mobile navigation, state persistence, live micro-interactions,
  * native dialogs (Analytics, Profile, Notifications, Add Motor, OTP), and hardware simulation.
  */
@@ -293,7 +293,7 @@
   }
 
   // State Management
-  const stateKey = 'karyaAutomationsDemoState';
+  const stateKey = 'uniquePumpGuardDemoState';
   const readState = () => {
     try {
       return JSON.parse(localStorage.getItem(stateKey) || '{}');
@@ -539,8 +539,8 @@
         <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:16px; padding:12px 14px; display:flex; gap:12px; align-items:start;">
           <div style="width:36px; height:36px; border-radius:50%; background:#e2e8f0; display:flex; align-items:center; justify-content:center; color:#475569; font-size:16px; flex-shrink:0;">ℹ️</div>
           <div>
-            <div style="font-size:13px; font-weight:700; color:#334155;">Gateway Communication Stable</div>
-            <div style="font-size:11px; color:#64748b; margin-top:2px;">Karya Nano 5G cellular signal quality: 94%.</div>
+            <div style="font-size:13px; font-weight:700; color:#334155;">Unique Pump Guard Gateway Stable</div>
+            <div style="font-size:11px; color:#64748b; margin-top:2px;">SNR/MSU/PG/4G cellular signal quality: 94%.</div>
             <div style="font-size:10px; color:#94a3b8; font-weight:600; margin-top:4px;">Yesterday</div>
           </div>
         </div>
@@ -578,7 +578,7 @@
           </div>
           <div style="display:flex; justify-content:space-between; margin-bottom:8px;">
             <span style="font-size:12px; color:#64748b;">Controller Unit</span>
-            <span style="font-size:12px; font-weight:700; color:#1e293b;">Karya Nano 5G</span>
+            <span style="font-size:12px; font-weight:700; color:#1e293b;">Unique Pump Guard (SNR/PG)</span>
           </div>
           <div style="display:flex; justify-content:space-between;">
             <span style="font-size:12px; color:#64748b;">Gateway Link</span>
@@ -587,7 +587,7 @@
         </div>
 
         <button id="app-profile-logout-btn" style="width:100%; background:#fee2e2; color:#dc2626; border:1.5px solid #fca5a5; padding:13px; border-radius:14px; font-weight:700; font-size:14px; cursor:pointer;">
-          Log Out of Karya Automations
+          Log Out of Unique Pump Guard
         </button>
       </div>
     `);

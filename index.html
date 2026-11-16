@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
-  <title>Karya Automations - Smart Motor Control</title>
-  <meta name="description" content="Karya Automations Smart Motor Control & Monitoring Mobile Application">
+  <title>Unique Pump Guard - SNR Electronics | Smart Motor Control</title>
+  <meta name="description" content="Unique Pump Guard by SNR Electronics - Smart Motor Control, DOL Unique Starter & Pump Protection Mobile Application">
+  <link rel="icon" type="image/png" href="assets/unique-pump-guard-emblem.png">
   <!-- Google Fonts: Inter (Clear, Simple, Standard UI Font) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -199,10 +200,12 @@
     <!-- Desktop brand bar -->
     <header class="showcase-header">
       <div class="showcase-brand">
-        <img src="assets/karya-logo.svg" alt="Karya Automations Logo" style="height: 32px; width: 32px; border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.3); border: 1.5px solid rgba(255,255,255,0.22); flex-shrink: 0;">
+        <div style="background:#ffffff;padding:5px 10px;border-radius:10px;display:flex;align-items:center;box-shadow:0 2px 10px rgba(0,0,0,0.28);border:1px solid rgba(255,255,255,0.6);flex-shrink:0;">
+          <img src="assets/unique-pump-guard-logo.png" alt="Unique Pump Guard - SNR Electronics Logo" style="height:24px;width:auto;display:block;">
+        </div>
         <div style="display:flex;flex-direction:column;line-height:1.15;">
-          <span style="font-size:13px;font-weight:800;letter-spacing:0.4px;">KARYA AUTOMATIONS</span>
-          <span style="font-size:11px;color:#94a3b8;font-weight:500;">Smart Motor Control</span>
+          <span style="font-size:13px;font-weight:800;letter-spacing:0.4px;">UNIQUE PUMP GUARD</span>
+          <span style="font-size:11px;color:#94a3b8;font-weight:500;">SNR Electronics &bull; DOL &amp; Pump Control</span>
         </div>
         <div class="showcase-badge">
           <span class="dot"></span>
@@ -223,7 +226,7 @@
 
     <!-- Mobile Screen Viewport (Strictly Mobile Structure, NO phone border, NO status bar time, NO bottom line) -->
     <main class="mobile-app-container" id="appContainer">
-      <iframe id="appFrame" title="Karya Automations Smart Motor Control Mobile Screen" src="national_splash_screen_custom_farm_background/code.html"></iframe>
+      <iframe id="appFrame" title="Unique Pump Guard - SNR Electronics Mobile Screen" src="national_splash_screen_custom_farm_background/code.html"></iframe>
     </main>
   </div>
 
@@ -301,7 +304,10 @@
 
     // Restart Button
     document.getElementById('restartAppBtn').addEventListener('click', () => {
+      localStorage.removeItem('uniquePumpGuardDemoState');
+      localStorage.removeItem('uniquePumpGuardSettings');
       localStorage.removeItem('karyaAutomationsDemoState');
+      localStorage.removeItem('karyaMotorProtectionSettings');
       localStorage.removeItem('nationalMotorDemoState');
       navigateTo('splash');
     });

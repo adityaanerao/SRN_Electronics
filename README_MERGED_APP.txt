@@ -1,16 +1,19 @@
-KARYA AUTOMATIONS SMART MOTOR CONTROL — INTERACTIVE FRONTEND DEMO
+UNIQUE PUMP GUARD (SNR ELECTRONICS) — INTERACTIVE FRONTEND DEMO
+
+Product Reference: https://www.snrelectronics.in/dol-unique-starter.htm
 
 RUN
 1. Extract the ZIP.
 2. Open index.html in Chrome or Edge.
-3. Use the left navigation or the screen-specific buttons to move through the supplied screens.
+3. Use the bottom navigation or the screen-specific buttons to move through the supplied screens.
 
 FUNCTIONALITY INCLUDED
-- Screen-to-screen navigation from the supplied screens.
+- Branded for Unique Pump Guard & DOL Unique Starter by SNR Electronics (Sangli, Maharashtra).
+- Screen-to-screen navigation across splash, login, dashboard, motors, controls, schedules, protection hub, analytics, and operator profile.
 - Login form demo validation and demo login routing.
 - Start/Stop/Fault reset simulated local state.
 - Schedule save stores form values locally in the browser.
-- Protection toggles and numeric stepper controls.
+- Protection toggles (Dry-Run, Overload, Voltage, Phase/SPP) and numeric stepper controls.
 - Settings save/review/apply confirmation flow.
 - Browser localStorage used for demo settings.
 

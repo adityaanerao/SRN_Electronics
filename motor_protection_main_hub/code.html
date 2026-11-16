@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
-  <title>Motor Protection Hub - Karya Automations</title>
+  <title>Motor Protection Hub - Unique Pump Guard | SNR Electronics</title>
   <!-- Google Fonts: Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,12 +52,12 @@
       <div class="flex items-center justify-between mb-2">
         <!-- Brand Logo & Identity in Left Corner (No Back Arrow on Tab Screen) -->
         <div class="flex items-center space-x-2.5 cursor-pointer btn-tactile" data-route="home">
-          <div class="bg-white rounded-full p-0.5 shadow-xs flex items-center justify-center shrink-0" style="width: 38px; height: 38px;">
-            <img src="../assets/karya-logo.svg" alt="Karya Automations Logo" class="w-full h-full object-contain rounded-full">
+          <div class="bg-white rounded-xl px-1.5 py-0.5 shadow-xs flex items-center justify-center shrink-0" style="height: 36px; width: 66px;">
+            <img src="../assets/unique-pump-guard-emblem.png" alt="Unique Pump Guard Logo" class="w-full h-full object-contain">
           </div>
           <div>
-            <span class="text-sm font-black tracking-tight text-white block leading-tight whitespace-nowrap">Karya Automations</span>
-            <span class="text-[11px] font-medium text-white/90 block leading-tight">Auto Starter Protection</span>
+            <span class="text-sm font-black tracking-tight text-white block leading-tight whitespace-nowrap">Unique Pump Guard</span>
+            <span class="text-[11px] font-medium text-white/90 block leading-tight">SNR Electronics &bull; Protection</span>
           </div>
         </div>
 
@@ -69,7 +69,7 @@
       </div>
       <div class="text-center px-4 pt-1">
         <h1 class="text-2xl font-black tracking-tight text-white leading-tight">Motor Protection</h1>
-        <p class="text-red-100 text-xs mt-0.5 font-medium">Automatic Starter Guard &amp; Electrical Safety Hub</p>
+        <p class="text-red-100 text-xs mt-0.5 font-medium">Unique Pump Guard &amp; DOL Starter Safety Hub</p>
       </div>
     </header>
 
@@ -335,7 +335,7 @@
     document.addEventListener('DOMContentLoaded', () => {
       // Sync badges from stored configuration
       try {
-        const stored = JSON.parse(localStorage.getItem('karyaMotorProtectionSettings') || '{}');
+        const stored = JSON.parse(localStorage.getItem('uniquePumpGuardSettings') || '{}');
         if (stored.dryrun && stored.dryrun.threshold) {
           document.getElementById('dryRunBadge').textContent = `${stored.dryrun.threshold.toFixed(1)} A`;
           document.getElementById('dryRunSub').textContent = `Cutoff < ${stored.dryrun.threshold.toFixed(1)}A • ${stored.dryrun.recoveryMinutes || 45}m well replenishment`;
@@ -377,10 +377,10 @@
 
           // Persist toggle change
           try {
-            const stored = JSON.parse(localStorage.getItem('karyaMotorProtectionSettings') || '{}');
+            const stored = JSON.parse(localStorage.getItem('uniquePumpGuardSettings') || '{}');
             if (!stored[target]) stored[target] = {};
             stored[target].isEnabled = nextState;
-            localStorage.setItem('karyaMotorProtectionSettings', JSON.stringify(stored));
+            localStorage.setItem('uniquePumpGuardSettings', JSON.stringify(stored));
           } catch(err) {}
 
           const toast = document.getElementById('toast');

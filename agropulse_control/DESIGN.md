@@ -1,5 +1,5 @@
 ---
-name: Karya Automations Control
+name: Unique Pump Guard (SNR Electronics) Control
 colors:
   surface: '#f9f9ff'
   surface-dim: '#cfdaf2'
